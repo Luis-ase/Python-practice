@@ -1,65 +1,53 @@
-# Comienzo del programa 2 clase 2
+#Ejercicios del 1 al 10 
 
-# number = input("ingrese un numero flaco:")
-# number2 = input("ingrese otro numero flaco:")
-# number = int(number)
-# number2 = int(number2)
-# mostrar = number + number2
 
-# print(mostrar)
-# a = 0
-# b = 1
-# c = "pepe"
+# Escribir un programa que permita que el usuario ingrese su nombre. 
+#El programa debe emitir una salida con un mensaje de bienvenida que incluya el nombre ingresado.
 
-# print("a:",a,b,c,sep="\n")
-# num1 = int(input("Numero 1:"))
-# num2 = int(input("Numero 2:"))
-# print(num1,num2, sep=" <==> ")
 
-# `${} algo ` en python es f"{} algo {}"
+# nombre= input("ingrese su nombre:")
 
-#ejercicio 16
+# print("Bienvenido "+ nombre)
 
-# segundos = input("ingrese los segundos")
-# dias = segundos // 86400
-# horas = (segundos % 86400) // 3600
-# minutos =(segundos % 3600) // 60
 
-# segundos_restantes = segundos % 60
+########################################################
+#Ejercicio 002
 
-#Ejercicio 21
+# nombre = input("Ingrese su nombre:")
+# edad = input("Ingrese su edad:")
 
-# n1 = int(input("Numero 1:"))
-# n2 = int(input("Numero 2:"))
-# if n1 > n2 :
-#     print("Mayor 1:" ,n1)
-# else:
-#     if n2 > n1:
-#         print("Mayor 2:" ,n2)
-#     else: 
-#         print("Son iguales")
+# print("Hola "+nombre+".Tu edad es "+ edad+" años.")
 
-#Ejercicio 22
+########################################################
+#Ejercicio 003
+"""
+nombre = input("Ingrese su nombre:")
+edad = int(input("Ingrese su edad:"))
+edad2 = int(input("Ingrese cuantos años pasaran para que llegues a tu prime:"))
+suma= edad + edad2
+print("Hola ",nombre,".Dentro de ", edad2 ," años tendras", suma," años.")
+"""
 
-n1 = int(input("Numero 1:"))
-n2 = int(input("Numero 2:"))
-n3 = int(input("Numero 3:"))
-# if n1 > n2  :
-#     if n1 > n3:
-#         print("Mayor 1:" ,n1)
-#     else: 
-#         print("Mayor 3:", n3)
-# else:
-#     if n2 > n1:
-#         if n2 > n3:
-#             print("Mayor 2:" ,n2)
-#     else: 
-#        print("Mayor 3:",n3)
- 
-mayor = n1 
-if n2 > mayor :
-    mayor = n2
-if n3 > mayor:
-    mayor = n3
 
-print("Mayor :", mayor)    
+########################################################
+#Ejercicio 004
+"""
+number1 = int(input("Ingrese un numero:"))
+number2 = int(input("Ingrese un numero:"))
+number3 = int(input("Ingrese un numero:"))
+suma = number1 + number2 + number3
+print(number1, " + ", number2, " + ", number3," =",suma )
+"""
+########################################################
+#Ejercicio 005
+"""
+Escribir un programa que solicite al usuario ingresar dos notas de un alumno. 
+El programa debe mostrar por pantalla el promedio de las notas de la siguiente manera: "Notas: [nota1] , [nota2] ==> promedio: [(nota1+nota2)/2]".
+Ejemplo: Si el usuario ingresa 7 y 8, el programa debe mostrar por pantalla: "Notas: 7 , 8 ==> promedio: 7.5".
+"""
+
+number1 = int(input("Ingrese un numero:"))
+number2 = int(input("Ingrese un numero:"))
+
+
+print("Notas: ",number1 ,",", number2 ,"==> promedio:",(number1 +number2 )/2 ,"." )
