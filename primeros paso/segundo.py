@@ -89,6 +89,13 @@ cálculo del salario total sea preciso y refleje el cambio en el importe a cobra
 
 ¿Hay que modificar el programa cada vez? ¿Cómo lo soluciono?
 """
+SUELDO=200000
+monto_total_de_ventas_realizadas= float(input("Monto total de ventas: "))
+porcentaje_de_las_ventas = (monto_total_de_ventas_realizadas/100) * 16
+
+sueldo_total= SUELDO + porcentaje_de_las_ventas
+print(f"El sueldo que obtendras por las ventas realizadas es de: {sueldo_total} ")
+
 #################################################
 #Ejercicio 014
 """
