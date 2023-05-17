@@ -97,6 +97,28 @@ Crear un programa que pida un número de mes (ejemplo 4) y
  escriba el nombre del mes en letras ("abril").
    Verificar que el mes sea válido e informar en caso que no lo sea.
 """
+
+numero = int(input("Elige el mes en base al numero:"))
+obj = {
+    1:"enero",
+    2:"febrero",
+    3:"marzo",
+    4:"abril",
+    5:"mayo",
+    6:"junio",
+    7:"julio",
+    8:"agosto",
+    9:"septiembre",
+    10:"octubre",
+    11:"noviembre",
+    12:"diciembre"
+}
+
+if obj[numero]:
+    print(f"El mes con ese numero es {obj[numero].title()}")
+else: 
+    print("No existe ese mes")
+
 #################################################
 #Ejercicio 029
 """
