@@ -131,7 +131,9 @@ Como pensarlo:
 
 #Ejercicio 009
 """
-Escribir un programa que permita ingresar valores del mismo tipo para las variables num1 y num2. Una vez cargadas, mostrar ambas variables por pantalla, intercambiá sus valores (que lo cargado en num1 quede en num2, y viceversa) y volvé a mostrarlas actualizadas.
+Escribir un programa que permita ingresar valores del mismo tipo para las variables num1 y num2. Una vez cargadas, 
+mostrar ambas variables por pantalla, intercambiá sus valores (que lo cargado en num1 quede en num2, y viceversa) 
+y volvé a mostrarlas actualizadas.
 Como pensarlo:
 1- Pedir al usuario que ingrese un valor para la variable num1.
 
@@ -152,4 +154,35 @@ b = a - b;
 a = a - b;
 print(a,b)
 """
+# num1=int(input("Ingrese un numero: "))
+# num2=int(input("Ingrese un numero: "))
 
+# print("este es numero 1: ",num1,"este numero 2: ",num2,sep="\n")
+
+# num1 = num1 + num2
+# num2 = num1 - num2
+# num1 = num1 - num2
+
+# print("ahora este es numero 1: ",num1,"ahora este es numero 2:",num2)
+########################################################
+#Ejercicio 010
+
+"""
+Escribir un programa para resolver el siguiente problema:
+Tres personas invierten dinero para fundar una empresa (no necesariamente en partes iguales).
+Calcular qué porcentaje invirtió cada una.
+"""
+
+inversion_persona1 = float(input("Ingrese la cantidad invertida por la persona 1: "))
+
+inversion_persona2 = float(input("Ingrese la cantidad invertida por la persona 2: "))
+
+inversion_persona3 = float(input("Ingrese la cantidad invertida por la persona 3: "))
+
+total = inversion_persona1 + inversion_persona2 + inversion_persona3
+
+porcentaje_inversion_persona1 = round((inversion_persona1 / total) * 100, 2)
+porcentaje_inversion_persona2 = round((inversion_persona2 / total) * 100, 2)
+porcentaje_inversion_persona3 = round((inversion_persona3 / total) * 100, 2)
+
+print(f"porcentaje de la persona 1: {porcentaje_inversion_persona1},porcentaje de la persona 2: {porcentaje_inversion_persona2}, porcentaje de la persona 3: {porcentaje_inversion_persona3}",sep="\n")
