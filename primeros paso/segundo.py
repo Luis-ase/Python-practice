@@ -89,12 +89,12 @@ cálculo del salario total sea preciso y refleje el cambio en el importe a cobra
 
 ¿Hay que modificar el programa cada vez? ¿Cómo lo soluciono?
 """
-SUELDO=200000
-monto_total_de_ventas_realizadas= float(input("Monto total de ventas: "))
-porcentaje_de_las_ventas = (monto_total_de_ventas_realizadas/100) * 16
+# SUELDO=200000
+# monto_total_de_ventas_realizadas= float(input("Monto total de ventas: "))
+# porcentaje_de_las_ventas = (monto_total_de_ventas_realizadas/100) * 16
 
-sueldo_total= SUELDO + porcentaje_de_las_ventas
-print(f"El sueldo que obtendras por las ventas realizadas es de: {sueldo_total} ")
+# sueldo_total= SUELDO + porcentaje_de_las_ventas
+# print(f"El sueldo que obtendras por las ventas realizadas es de: {sueldo_total} ")
 
 #################################################
 #Ejercicio 014
@@ -120,6 +120,12 @@ Por ejemplo, se puede calcular la cantidad de alambre necesaria para cercar a 1 
  distintas al usuario.
 
 """
+# ancho = int(input("Ancho del terreno en metros: "))
+# largo = int(input("Largo del terreno en metros: "))
+# metros_cuadrados_del_terreno = int(input("Metros cuadrados del terreno : "))
+# terreno_total= (ancho * largo) * metros_cuadrados_del_terreno
+# print(f"Valor total del terreno : {(terreno_total)}")
+
 #################################################
 #Ejercicio 015
 """
@@ -133,6 +139,14 @@ y el valor total de las mismas.
 ¿Sobran datos? ¿Qué datos sobran?
 
 """
+# SALARIO_BASE= 100000
+# COMISION_FIJA_POR_VENTA= 200
+# nombre_del_vendedor = input("Ingrese su nombre vendedor:")
+# ventas_realizadas_por_mes = int(input("Ingrese el numero de ventas realizadas en el mes: "))
+# cantidad_de_monto_realizado_en_el_mes = int(input("Ingrese el monto obtenido en el mes: "))
+# salario_total= SALARIO_BASE + (COMISION_FIJA_POR_VENTA *ventas_realizadas_por_mes) + ((cantidad_de_monto_realizado_en_el_mes/100)* 5)
+# print(f"Nombre del vendedor: {nombre_del_vendedor}.\n Cantidad de ventas realizada: {ventas_realizadas_por_mes}.\n Monto total por las ventas realizadas en el men {cantidad_de_monto_realizado_en_el_mes}.\n Salario total del vendedor en este mes:{salario_total}")
+
 #################################################
 #Ejercicio 016
 """
@@ -153,6 +167,20 @@ minutos = (segundos % 3600) // 60 # 60 segundos = 1 minuto
 segundos_restantes = segundos % 60 # segundos restantes
 
 """
+# segundos_convertir = int(input("Ingrese los segundo a convertir: "))
+# dias= round(segundos_convertir / 86400) 
+# horas = round((segundos_convertir % 86400) / 3600)
+# minutos = round((segundos_convertir % 3600) / 60)
+# segundos_restantes = round((segundos_convertir % 60))
+
+# print(
+#     f""" 
+#     {dias} dias
+#     {horas} horas
+#     {minutos} minutos
+#     {segundos_restantes} segundos restantes
+#     """)
+
 #################################################
 #Ejercicio 017
 """
@@ -160,8 +188,11 @@ segundos_restantes = segundos % 60 # segundos restantes
 y monedas necesarios. Tengo todas las instrucciones necesarias, pero están todas mezcladas. 
 ¿Podrías ayudarme a ordenarlas de manera correcta para que funcione el programa como debería? 
 A lo mejor se me perdieron algunas instrucciones, ¿podrías agregarlas?
+"""
+cantidad_total = int(input("Ingrese la cantidad de dinero a convertir: "))
 resto = cantidad_total
 billetes_cien = resto // 100
+billetes_uno = resto // 1
 resto = resto % 100
 billetes_cinco = resto // 5
 billetes_mil = resto // 1000
@@ -170,14 +201,12 @@ billetes_doscientos = resto // 200
 billetes_diez = resto // 10
 billetes_docientos = resto // 200
 resto = resto % 10
-cantidad_total = int(input("Ingrese la cantidad de dinero a convertir: "))
-billetes_uno = resto // 1
-print("Para la cantidad de  ",cantidadtotal,"senecesitan:")print(billetesmil,"billetesde 1000")
-print(billetes_doscientos, "billetes de  200")print(billetescien,"billetesde 100")
-print(billetes_cincuenta, "billetes de  50")print(billetesdiez,"billetesde 10")
-print(billetes_cinco, "billetes de  5")print(billetesuno,"billetesde 1")
+print(f"Para la cantidad de  ",cantidad_total,"senecesitan:",billetes_mil,"billetesde 1000")
+print(billetes_doscientos, "billetes de  200",billetes_cien,"billetesde 100")
+print(billetes_cincuenta, "billetes de  50",billetes_cien,"billetesde 10")
+print(billetes_cinco, "billetes de  5",billetes_cien,"billetesde 1")
 
-"""
+
 #################################################
 #Ejercicio 018
 """
