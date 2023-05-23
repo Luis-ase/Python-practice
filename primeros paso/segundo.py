@@ -189,22 +189,22 @@ y monedas necesarios. Tengo todas las instrucciones necesarias, pero están toda
 ¿Podrías ayudarme a ordenarlas de manera correcta para que funcione el programa como debería? 
 A lo mejor se me perdieron algunas instrucciones, ¿podrías agregarlas?
 """
-cantidad_total = int(input("Ingrese la cantidad de dinero a convertir: "))
-resto = cantidad_total
-billetes_cien = resto // 100
-billetes_uno = resto // 1
-resto = resto % 100
-billetes_cinco = resto // 5
-billetes_mil = resto // 1000
-billetes_cincuenta = resto // 50
-billetes_doscientos = resto // 200
-billetes_diez = resto // 10
-billetes_docientos = resto // 200
-resto = resto % 10
-print(f"Para la cantidad de  ",cantidad_total,"senecesitan:",billetes_mil,"billetesde 1000")
-print(billetes_doscientos, "billetes de  200",billetes_cien,"billetesde 100")
-print(billetes_cincuenta, "billetes de  50",billetes_cien,"billetesde 10")
-print(billetes_cinco, "billetes de  5",billetes_cien,"billetesde 1")
+# cantidad_total = int(input("Ingrese la cantidad de dinero a convertir: "))
+# resto = cantidad_total
+# billetes_cien = resto // 100
+# billetes_uno = resto // 1
+# resto = resto % 100
+# billetes_cinco = resto // 5
+# billetes_mil = resto // 1000
+# billetes_cincuenta = resto // 50
+# billetes_doscientos = resto // 200
+# billetes_diez = resto // 10
+# billetes_docientos = resto // 200
+# resto = resto % 10
+# print(f"Para la cantidad de  ",cantidad_total,"senecesitan:",billetes_mil,"billetesde 1000")
+# print(billetes_doscientos, "billetes de  200",billetes_cien,"billetesde 100")
+# print(billetes_cincuenta, "billetes de  50",billetes_cien,"billetesde 10")
+# print(billetes_cinco, "billetes de  5",billetes_cien,"billetesde 1")
 
 
 #################################################
@@ -225,6 +225,11 @@ Si el resto de la división del número por 2 es 0, entonces el número es par.
 Si el resto de la división del número por 2 es 1, entonces el número es impar.)
 
 """
+numero = int(input("Ingrese un numero entero: "))
+if(numero % 2 == 0):
+    print(f"El numero: {numero} par")
+else :
+    print(f"El numero: {numero} es impar")
 #################################################
 #Ejercicio 019
 """
