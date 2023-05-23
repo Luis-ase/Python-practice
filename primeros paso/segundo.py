@@ -230,17 +230,28 @@ if(numero % 2 == 0):
     print(f"El numero: {numero} par")
 else :
     print(f"El numero: {numero} es impar")
+
 #################################################
 #Ejercicio 019
 """
 Escribir un programa que permita ingresar dos números enteros e indicar si son iguales o distintos.
-
 """
-#################################################
+numero = int(input("Ingrese un numero 1: "))
+numero2= int(input("Ingrese un numero 2: "))
+if(numero == numero2):
+    print(f"son igaules")
+else :
+    print("no son iguales")
+################################################
 #Ejercicio 020
 """
 Escribir un programa que permita ingresar dos cadenas de caracteres e indicar si son iguales o distintas.
 
 """
+cadena = input("Ingrese un texto: ")
+cadena2 = input("Ingrese un texto: ")
 
-
+if( cadena == cadena2):
+    print("print los texto son iguales")
+else :
+    print(f"Los textos: \n {cadena2} \n {cadena} \n no son iguales")
