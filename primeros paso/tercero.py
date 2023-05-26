@@ -4,6 +4,17 @@
 Escribir un programa que permita ingresar dos números enteros e indicar si el primero es mayor,
 menor o igual al segundo.
 """
+num1 = int(input("Ingrese el numero 1 : "))
+num2 = int(input("Ingrese el numero 2 : "))
+
+mayor = 0
+if num1 > num2:
+    mayor = num1
+    print(f"Numeros ingresado:\n numero 1:{num1}\n numero 2:{num2}\n  el numero mayor es {mayor} el numero menor es {num2}")
+elif num1 == num2:
+    print(f"Numeros ingresado:\n numero 1:{num1}\n numero 2:{num2}\n  son iguales ")
+if mayor == 0 :
+    print(f"Numeros ingresado:\n numero 1:{num1}\n numero 2:{num2}\n el numero mayor es {num2} el numero menor es {num1}")
 
 #################################################
 #Ejercicio 022
@@ -98,26 +109,26 @@ Crear un programa que pida un número de mes (ejemplo 4) y
    Verificar que el mes sea válido e informar en caso que no lo sea.
 """
 
-numero = int(input("Elige el mes en base al numero:"))
-obj = {
-    1:"enero",
-    2:"febrero",
-    3:"marzo",
-    4:"abril",
-    5:"mayo",
-    6:"junio",
-    7:"julio",
-    8:"agosto",
-    9:"septiembre",
-    10:"octubre",
-    11:"noviembre",
-    12:"diciembre"
-}
+# numero = int(input("Elige el mes en base al numero:"))
+# obj = {
+#     1:"enero",
+#     2:"febrero",
+#     3:"marzo",
+#     4:"abril",
+#     5:"mayo",
+#     6:"junio",
+#     7:"julio",
+#     8:"agosto",
+#     9:"septiembre",
+#     10:"octubre",
+#     11:"noviembre",
+#     12:"diciembre"
+# }
 
-if obj[numero]:
-    print(f"El mes con ese numero es {obj[numero].title()}")
-else: 
-    print("No existe ese mes")
+# if obj[numero]:
+#     print(f"El mes con ese numero es {obj[numero].title()}")
+# else: 
+#     print("No existe ese mes")
 
 #################################################
 #Ejercicio 029
