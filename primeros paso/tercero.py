@@ -4,23 +4,55 @@
 Escribir un programa que permita ingresar dos números enteros e indicar si el primero es mayor,
 menor o igual al segundo.
 """
-num1 = int(input("Ingrese el numero 1 : "))
-num2 = int(input("Ingrese el numero 2 : "))
+# num1 = int(input("Ingrese el numero 1 : "))
+# num2 = int(input("Ingrese el numero 2 : "))
 
-mayor = 0
-if num1 > num2:
-    mayor = num1
-    print(f"Numeros ingresado:\n numero 1:{num1}\n numero 2:{num2}\n  el numero mayor es {mayor} el numero menor es {num2}")
-elif num1 == num2:
-    print(f"Numeros ingresado:\n numero 1:{num1}\n numero 2:{num2}\n  son iguales ")
-if mayor == 0 :
-    print(f"Numeros ingresado:\n numero 1:{num1}\n numero 2:{num2}\n el numero mayor es {num2} el numero menor es {num1}")
+# mayor = 0
+# if num1 > num2:
+#     mayor = num1
+#     print(f"Numeros ingresado:\n numero 1:{num1}\n numero 2:{num2}\n  el numero mayor es {mayor} el numero menor es {num2}")
+# elif num1 == num2:
+#     print(f"Numeros ingresado:\n numero 1:{num1}\n numero 2:{num2}\n  son iguales ")
+# if mayor == 0 :
+#     print(f"Numeros ingresado:\n numero 1:{num1}\n numero 2:{num2}\n el numero mayor es {num2} el numero menor es {num1}")
 
 #################################################
 #Ejercicio 022
 """
 Escribir un programa que permita ingresar tres números enteros e indicar cual es el mayor.
 """
+num1 = int(input("Ingrese el numero 1 : "))
+num2 = int(input("Ingrese el numero 2 : "))
+num3 = int(input("Ingrese el numero 3 : "))
+
+mayor = 0
+if num1 > num2 and num1 > num3:
+    mayor = num1
+    print(f"""
+    Numeros ingresado:\n 
+      numero 1:{num1}\n
+      numero 2:{num2}\n 
+      numero 3:{num3}\n 
+      el numero mayor es {mayor}
+      """)
+if num2 > num1 and num2 > num3:
+    mayor = num2
+    print(f"""
+    Numeros ingresado:\n 
+      numero 1:{num1}\n
+      numero 2:{num2}\n 
+      numero 3:{num3}\n 
+      el numero mayor es {mayor}
+      """)
+if mayor == 0:
+    print(f"""
+    Numeros ingresado:\n 
+      numero 1:{num1}\n
+      numero 2:{num2}\n 
+      numero 3:{num3}\n 
+      el numero mayor es {num3}
+      """)
+    
 #################################################
 #Ejercicio 023
 """
