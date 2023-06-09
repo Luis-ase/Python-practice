@@ -2,7 +2,7 @@
 Vimos anteriormente el programacion estructurado 
 
 """
-def convertir_a_año(f):
+def convertir_a_año(f:int):
     return f //10000
 
 def convertir_a_mes(f:int):
